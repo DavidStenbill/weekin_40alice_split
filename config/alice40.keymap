@@ -11,18 +11,21 @@
             bindings = <&kp LC(SPACE)>;
             label = "CTRLSPACE";
         };
+
         secret1: secret1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp STAR &kp LS(A) &kp B &kp N2 &kp N5 &kp N5 &kp N4 &kp N4 &kp N0 &kp RET>;
             label = "SECRET1";
         };
+
         secret2: secret2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(S) &kp LS(E) &kp DLLR &kp R &kp F &kp T &kp N6 &kp Y &kp RET>;
             label = "SECRET2";
         };
+
         secret3: secret3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -37,10 +40,10 @@
         Base_layer {
             label = "BASE";
             bindings = <
-&kp GRAVE   &kp Q         &kp W  &kp E        &kp R  &kp T     &kp Y        &kp U  &kp I      &kp O      &kp P      &kp BACKSPACE
-&lt 1 TAB   &kp A         &kp S  &kp D        &kp F  &kp G     &kp H        &kp J  &kp K      &kp L      &kp ENTER  &kp ENTER
-&kp LSHIFT  &kp Z         &kp X  &kp C        &kp V  &kp B     &lt 1 B      &kp N  &kp M      &kp COMMA  &kp DOT    &kp RSHIFT
-&kp LCTRL   &kp LEFT_ALT         &lt 2 SPACE         &kp LGUI  &lt 2 SPACE  &mo 3  &kp SLASH  &mo 3      &kp LEFT   &kp RIGHT
+&kp GRAVE   &kp Q         &kp W  &kp E  &kp R  &kp T     &kp Y        &kp U  &kp I      &kp O      &kp P      &kp BACKSPACE
+&lt 1 TAB   &kp A         &kp S  &kp D  &kp F  &kp G     &kp H        &kp J  &kp K      &kp L      &kp ENTER  &kp ENTER
+&kp LSHIFT  &kp Z         &kp X  &kp C  &kp V  &kp B     &lt 1 B      &kp N  &kp M      &kp COMMA  &kp DOT    &kp RSHIFT
+&kp LCTRL   &kp LEFT_ALT         &mo 2         &kp LGUI  &lt 2 SPACE  &mo 3  &kp SLASH  &mo 3      &kp LEFT   &kp RIGHT
             >;
         };
 
